@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script>
+
+</script>
+<style>
+#wrapper{
+width:150px;
+height:150px;
+background:linear-gradient(135deg, rgba(111,219,68,1) 0%,rgba(111,219,68,1) 50%,rgba(3,153,8,1) 50%,rgba(3,153,8,1) 100%);
+
+margin:20px auto;
+border-radius:100px;
+box-shadow:0 0 3px rgba(0,0,0,.7);
+}
+#up{
+float:right;
+width:50px;
+height:50px;
+border-radius:100px;
+background:#6fdb44;
+/*box-shadow*/
+box-shadow:3px 2px 3px rgba(0,0,0,.6);
+margin-right:20px;
+margin-top:11px;
+}
+#down{
+float:left;
+width:50px;
+height:50px;
+border-radius:100px;
+background:#039908;
+margin:-14px 15px;
+box-shadow:-2px -2px 3px rgba(0,0,0,.6);
+}
+#mid{
+float:left;
+width:49px;
+height:49px;
+border-radius:100px;
+background:#333;
+margin-left:50px;
+margin-top:-10px;
+box-shadow:inset 0 0 10px #000;
+	z-index: 999;
+}
+#mid p{
+	z-index: 999;
+}
+@keyframes rotate{
+0%{ -webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(360deg);}
+}
+.wrapper{
+	animation:rotate 2s linear infinite;
+}
+.ball{
+	width: 50px;
+	height: 50px;
+	bottom: 0;
+	position: absolute;
+	border-radius: 50%;
+	background-color: black;
+	animation: jump 2s linear infinite;
+
+}
+@keyframes jump{
+	0%{bottom: 200px;}
+	50%{bottom: 0px;}
+	100%{bottom:200px;}
+}
+</style>
+</head>
+<body>
+<section>
+	<div id="wrapper" class="wrapper">
+		<div id="up"></div>
+		<div id="mid">
+			<p>哈哈</p>
+		</div>
+		<div id="down"></div>
+	</div>
+</section>
+<div class="ball"></div>
+</body>
+</html>

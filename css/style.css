@@ -37,7 +37,7 @@ label{
 }
 /*--header--*/
 .top-header {
-     padding: 9em 0 0 0;
+     padding: 4em 0 0 0;
 }
 .logo {
     float: left;
@@ -366,7 +366,7 @@ label{
     min-height:137px;
 }
 .about {
-    padding:8em 0 4em 0;
+    padding:2em 0 4em 0;
 }
 h3.tittle{
 font-size: 3em;
@@ -1194,7 +1194,7 @@ a:hover.tooltips span {
 		-o-background-size: cover;
 		-moz-background-size: cover;
 		-ms-background-size: cover;
-		min-height: 591px;
+		min-height: 500px;
 		position: relative;
 	}
 	.banner-info {
@@ -1737,7 +1737,7 @@ a:hover.tooltips span {
     bottom: -190%;
 	}
 	.about {
-		padding: 28em 0 4em 0;
+		padding: 6em 0 4em 0;
 	}
 	.header {
 		background: url(../img/bg.jpg);
@@ -2006,4 +2006,12 @@ a:hover.tooltips span {
   z-index: 2; 
   transition: opacity 500ms ease-in-out;
 }
-
+#bac{
+    color: #fff;
+    font-size: 30px;
+    width:200px;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 25px;
+}
