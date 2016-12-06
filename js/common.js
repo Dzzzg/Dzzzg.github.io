@@ -35,6 +35,7 @@
 		sec='0'+sec;
 	}
 	document.getElementById("bac").innerHTML=hour+":"+min+":"+sec;
+	document.getElementById("bac").title="北京时间"+hour+":"+min+":"+sec;
 	t=setTimeout("fuc()",1000);//调到1有奇效
 });
 	
