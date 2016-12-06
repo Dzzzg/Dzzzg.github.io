@@ -2014,7 +2014,7 @@ a:hover.tooltips span {
     line-height: 100px;
     border-radius: 25px;
 }
-#wrapper{
+.wrapper{
 width:150px;
 height:150px;
 background:linear-gradient(135deg, rgba(111,219,68,1) 0%,rgba(111,219,68,1) 50%,rgba(3,153,8,1) 50%,rgba(3,153,8,1) 100%);
@@ -2022,8 +2022,9 @@ margin:20px 300px;
 border-radius:100px;
 box-shadow:0 0 3px rgba(0,0,0,.7);
 display: inline-block;
+animation:rotate 2s linear infinite;
 }
-#up{
+.up{
 float:right;
 width:50px;
 height:50px;
@@ -2034,7 +2035,7 @@ box-shadow:3px 2px 3px rgba(0,0,0,.6);
 margin-right:20px;
 margin-top:11px;
 }
-#down{
+.down{
 float:left;
 width:50px;
 height:50px;
@@ -2043,7 +2044,7 @@ background:#039908;
 margin:-14px 15px;
 box-shadow:-2px -2px 3px rgba(0,0,0,.6);
 }
-#mid{
+.mid{
 float:left;
 width:49px;
 height:49px;
@@ -2052,17 +2053,14 @@ background:#333;
 margin-left:50px;
 margin-top:-10px;
 box-shadow:inset 0 0 10px #000;
-  z-index: 999;
+z-index: 999;
 }
-#mid p{
+.mid p{
   z-index: 999;
 }
 @keyframes rotate{
 0%{ -webkit-transform:rotate(0deg);}
   100%{-webkit-transform:rotate(360deg);}
-}
-.wrapper{
-  animation:rotate 2s linear infinite;
 }
 .scrolltotop{
   width: 500px;
@@ -2103,4 +2101,66 @@ to {top:-600px;}
 {
 from {top:400px;}
 to {top:-600px;}
+}
+
+.sunear{
+width:500px;
+height:500px;
+margin:70px auto 30px;
+padding:20px;
+border-radius:50%;
+/*box-shadow:0 0 3px rgba(0,0,0,.7);*/
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+animation:rotate 182.5s linear infinite;
+}
+@keyframes rotate{
+0%{ -webkit-transform:rotate(0deg);}
+  100%{-webkit-transform:rotate(360deg);}
+}
+.earmo{
+  animation:rotate 15s linear infinite;
+}
+.earth{
+  animation:rotate 0.5s linear infinite;
+}
+.moon{
+  animation:rotate 15s linear infinite;
+}
+.sun{
+  margin:auto;
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url(../img/sun.gif) no-repeat center center;/*背景图自适应*/
+  background-size: 120% auto;
+  box-shadow:0 0 20px rgba(255,215,0,.7);
+}
+.earmo{
+  position: absolute;
+  top:70px;
+  left:0;
+  width: 80px;
+  height: 120px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.earth{
+  margin:auto;
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  background: url(../img/earth.jpg) no-repeat center center;
+  background-size: 130% auto;
+}
+.moon{
+  margin:0 -40px 0 0;
+  width:25px;
+  height: 25px;
+  border-radius: 50%;
+  background: url(../img/moon.jpg) no-repeat center center;
+  background-size: 200% auto;
 }
