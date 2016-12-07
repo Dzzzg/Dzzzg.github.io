@@ -2005,6 +2005,7 @@ a:hover.tooltips span {
   z-index: 2; 
   transition: opacity 500ms ease-in-out;
 }
+
 #bac{
     color: #fff;
     font-size: 30px;
@@ -2111,23 +2112,38 @@ padding:20px;
 border-radius:50%;
 /*box-shadow:0 0 3px rgba(0,0,0,.7);*/
 position: relative;
-display:flex;
+display:flex;/*垂直水平居中*/
 align-items: center;
 justify-content: center;
-animation:rotate 182.5s linear infinite;
+animation:rotate2 182.5s infinite;
+-moz-animation:rotate2 182.5s infinite; /* Firefox */
+-webkit-animation:rotate2 182.5s infinite; /* Safari and Chrome */
+-o-animation:rotate2 182.5s infi2nite; /* Opera */
 }
-@keyframes rotate{
-0%{ -webkit-transform:rotate(0deg);}
-  100%{-webkit-transform:rotate(360deg);}
+@keyframes rotate2{
+0%{ 
+transform:rotate(0deg);
+-ms-transform:rotate(0deg);   /* IE 9 */
+-moz-transform:rotate(0deg);  /* Firefox */
+-webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+-o-transform:rotate(0deg);  /* Opera */
+}
+100%{
+transform:rotate(360deg);
+-ms-transform:rotate(360deg);   /* IE 9 */
+-moz-transform:rotate(360deg);  /* Firefox */
+-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+-o-transform:rotate(360deg);  /* Opera */
+}
 }
 .earmo{
-  animation:rotate 15s linear infinite;
+  animation:rotate2 15s linear infinite;
 }
 .earth{
-  animation:rotate 0.5s linear infinite;
+  animation:rotate2 0.5s linear infinite;
 }
 .moon{
-  animation:rotate 15s linear infinite;
+  animation:rotate2 15s linear infinite;
 }
 .sun{
   margin:auto;
@@ -2163,4 +2179,64 @@ animation:rotate 182.5s linear infinite;
   border-radius: 50%;
   background: url(../img/moon.jpg) no-repeat center center;
   background-size: 200% auto;
+}
+
+.wrap{
+  height: 600px;
+  background-color: #000000;
+}
+.dice{
+width: 300px;
+height: 300px;
+border-radius: 30px;
+position: relative;
+transform-style:preserve-3d;
+left: 300px;
+top: 200px;
+transform:rotateX(-45deg) rotateY(-45deg);
+animation: rotate3 5s linear infinite;
+}
+@keyframes rotate3{
+0%{transform:rotateX(-45deg) rotateY(-45deg) rotateZ(-45deg); }
+20%{transform:rotateX(-90deg) rotateY(-90deg) rotateZ(45deg); }
+40%{transform:rotateX(-135deg) rotateY(-125deg) rotateZ(-135deg);}
+60%{transform:rotateX(-160deg) rotateY(90deg) rotateZ(-180deg);}
+80%{transform:rotateX(-90deg) rotateY(0deg) rotateZ(-105deg);}
+100%{transform:rotateX(-45deg) rotateY(-45deg) rotateZ(-45deg);} 
+}
+.dice div{
+width: 300px;
+height: 300px;
+border-radius: 30%;
+overflow: hidden;
+position: absolute;
+left: 0;top: 0;
+font-size: 160px;
+color: white;
+line-height: 300px;
+text-align: center;
+opacity: 0.9;
+background: url(../img/earth.jpg) no-repeat center center;/*背景图自适应*/
+background-size: 100% auto;
+box-shadow: 0 0 100px blue;}
+img{
+width: 300px;
+}
+.div1{
+  transform: translateZ(150px);
+}
+.div2{
+  transform: rotateY(-90deg) translateZ(150px);
+}
+.div3{
+  transform: rotateX(90deg) translateZ(-150px);
+}
+.div4{
+  transform: rotateY(90deg) translateZ(150px);
+}
+.div5{
+  transform: rotateX(-90deg) translateZ(-150px);
+}
+.div6{
+  transform:translateZ(-150px);
 }
