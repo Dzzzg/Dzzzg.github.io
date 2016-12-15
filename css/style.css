@@ -2103,6 +2103,58 @@ to {top:-600px;}
 from {top:400px;}
 to {top:-600px;}
 }
+.pics{
+  margin:10px 30%;
+  height: 500px;
+}
+.tab li{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background: #F5A9A9;  
+    border-radius: 8px;
+}
+.tab li p{
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+}
+.red{
+  color:red;
+}
+.tab li:hover{
+  background: #2EFEF7;
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px -15px #aaa;
+    transition: all .5s ease;
+}
+.choosed{
+  background: #2EFEF7;
+}
+.page span{
+  font-size: 24px;
+  text-align: center;
+  line-height: 100px;
+  display:none;
+}
+.page{
+  margin-top:10px;
+  width: 500px;
+  height: 100px;
+  padding:0 45%;
+  border:4px solid #bbb;
+  border-radius: 8px;
+}
+.picture{
+    margin-left: 100px;
+}
+.picture img{
+    display: none;
+}
+.basicspan{
+    text-align: center;
+    line-height: 100px;
+}
 
 .sunear{
 width:500px;
@@ -2219,9 +2271,6 @@ opacity: 0.9;
 background: url(../img/earth.jpg) no-repeat center center;/*背景图自适应*/
 background-size: 100% auto;
 box-shadow: 0 0 100px blue;}
-img{
-width: 300px;
-}
 .div1{
   transform: translateZ(150px);
 }
