@@ -2162,23 +2162,23 @@ to {top:-600px;}
   display: none;
 }
 .pic1{
-  background: url(../img/img1.jpg) no-repeat;
+  background: url(../img/first.jpg) no-repeat;
   height: 500px;
 }
 .pic2{
-  background: url(../img/img2.jpg) no-repeat;
+  background: url(../img/second.jpg) no-repeat;
   height: 500px;
 }
 .pic3{
-  background: url(../img/img3.jpg) no-repeat;
+  background: url(../img/third.jpg) no-repeat;
   height: 500px;
 }
 .pic4{
-  background: url(../img/img4.jpg) no-repeat;
+  background: url(../img/fourth.jpg) no-repeat;
   height: 500px;
 }
 .pic5{
-  background: url(../img/img5.jpg) no-repeat;
+  background: url(../img/fifth.jpg) no-repeat;
   height: 500px;
 }
 .basicspan{
