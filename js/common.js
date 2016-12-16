@@ -41,6 +41,26 @@
 	t=setTimeout("fuc()",1000);//调到1有奇效
 	});
 
+	function GetRTime(){
+	    var EndTime= new Date('2017/01/28 00:00:00');
+	    var NowTime = new Date();
+	    var t =EndTime.getTime() - NowTime.getTime();
+	    var d=0;
+	    var h=0;
+	    var m=0;
+	    var s=0;
+	    if(t>=0){
+	      d=Math.floor(t/1000/60/60/24);
+	      h=Math.floor(t/1000/60/60%24);
+	      m=Math.floor(t/1000/60%60);
+	      s=Math.floor(t/1000%60);
+		document.getElementById('newYear').innerHTML='距离新年还有'+d+'天'+h+'时'+m+'分'+s+'秒!'; 
+		}else{
+		document.getElementById('newYear').innerHTML='Happy New Year!';
+		}
+	}
+	setInterval(GetRTime,0);
+
 	$(function(){  //由于要控制相应span的显示隐藏，那么必须获取li的位置，所以使用each（）遍历。
        $(".tab li").each(function(index){
             $(this).click(function(){
@@ -49,7 +69,7 @@
                 $(".tab li p").removeClass("red");
 		 		$(this).find("p").addClass("red");
                 $(".page span:eq("+index+")").show().siblings().hide();
-                $(".picture img:eq("+index+")").show().siblings().hide();
+                $(".picture p:eq("+index+")").show().siblings().hide();
 
                 //给span加div是因为不加的话会把ul也隐藏，因为那样ul跟span是同级元素。
             });

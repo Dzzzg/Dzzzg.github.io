@@ -2014,6 +2014,14 @@ a:hover.tooltips span {
     text-align: center;
     line-height: 100px;
     border-radius: 25px;
+    display: inline-block;
+}
+#newYear{
+    float: right;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
 }
 .wrapper{
 width:150px;
@@ -2147,9 +2155,31 @@ to {top:-600px;}
 }
 .picture{
     margin-left: 100px;
+    width: 500px;
+    height:500px;
 }
-.picture img{
-    display: none;
+.picture p{
+  display: none;
+}
+.pic1{
+  background: url(../img/img1.jpg) no-repeat;
+  height: 500px;
+}
+.pic2{
+  background: url(../img/img2.jpg) no-repeat;
+  height: 500px;
+}
+.pic3{
+  background: url(../img/img3.jpg) no-repeat;
+  height: 500px;
+}
+.pic4{
+  background: url(../img/img4.jpg) no-repeat;
+  height: 500px;
+}
+.pic5{
+  background: url(../img/img5.jpg) no-repeat;
+  height: 500px;
 }
 .basicspan{
     text-align: center;
