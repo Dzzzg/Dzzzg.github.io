@@ -1407,8 +1407,7 @@ from {top:400px;}
 to {top:-600px;}
 }
 .pics{
-  margin:65px 30%;
-  height: 500px;
+  margin:65px 30% 0;
 }
 .tab li{
   display: inline-block;
@@ -1419,7 +1418,7 @@ to {top:-600px;}
 }
 .tab li p{
   color: #fff;
-  line-height: 60px;
+  line-height: 100px;
   text-align: center;
 }
 .red{
