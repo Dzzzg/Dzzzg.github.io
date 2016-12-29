@@ -1,8 +1,7 @@
 
 html, body{
-  font-family: 'Raleway', sans-serif;
   font-size: 100%;
-  background: #FFf;
+  background: #FFF;
 }
 body a {
 	transition:0.5s all;
@@ -446,6 +445,7 @@ h3.tittle.two {
 .copy p {
   color: #fff;
   font-size:0.9em;
+  line-height: 1.6em;
 }
 .copy p a {
   color:#2ad2c9;
@@ -1639,4 +1639,14 @@ to {top:-600px;}
 }
 .div6{
   transform:translateZ(-150px);
+}
+.copy i{
+	font: 12px arial;
+	display: inline-block;
+	margin:0 9px 0 9px;
+	vertical-align: middle;
+    margin-top: -5px;
+	width:14px;
+	height: 16px;
+	background: url(../img/police.png)
 }
