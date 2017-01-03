@@ -1520,7 +1520,7 @@ to {top:-600px;}
   animation:rotate2 182.5s infinite;
   -moz-animation:rotate2 182.5s infinite; /* Firefox */
   -webkit-animation:rotate2 182.5s infinite; /* Safari and Chrome */
-  -o-animation:rotate2 182.5s infi2nite; /* Opera */
+  -o-animation:rotate2 182.5s infinite; /* Opera */
 }
 @keyframes rotate2{
 0%{ 
